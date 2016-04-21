@@ -1,0 +1,119 @@
+
+@import url("../css/font/ElegantLux-Mager.otf");
+
+p {
+  font-size: $base-font-size;
+}
+
+// Navigation 
+.navbar-inverse { 
+  .navbar-toggle {
+    border: none;
+    &:hover,
+    &:active,
+    &:focus {
+      background: transparent;
+    }
+  }
+}
+
+.navbar-brand {
+  font-size: $fourth-header;
+}
+
+#top {
+  color: $main-color;
+}
+
+.navbar-nav {
+  text-transform: uppercase;
+  a {
+    font-size: $base-font-size;
+    letter-spacing: 2px;
+  }
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background: transparent;
+}
+
+// Headers 
+h1 {
+  font-size: $third-header;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  @media only screen and (min-width: 768px) {
+    font-size: $primary-header;
+  }
+}
+
+h2 {
+  font-size: $fourth-header;
+  letter-spacing: 4px;
+  padding-bottom: $padding * 12;
+  text-transform: uppercase;
+  @media only screen and (min-width: 768px) { 
+    font-size: $secondary-header;
+  }  
+}
+
+h3 {
+  font-size: $fourth-header; 
+  letter-spacing: 2px; 
+  margin-bottom: $margin * 8;
+  text-transform: uppercase;
+  @media only screen and (min-width: 768px) {
+    font-size: $third-header;
+  }
+}
+
+// jumbotron 
+.jumbotron {
+  .lead {
+    display: inline-block;
+    font-size: $base-font-size;
+    @media only screen and (min-width: 768px) { 
+      font-size: $fourth-header;
+    }  
+  }
+}
+
+.cust-statement {
+  .glyphicon-comment {
+    font-size: $base-font-size * 8;
+    margin-top: $margin * 8;
+  }
+}
+
+// Main Content typography 
+.main-content {
+  .glyphicon {
+    font-size: $base-font-size * 4;
+    margin-bottom: $margin * 8;
+  }
+}
+ 
+ // Contact 
+ .contact {
+   .contact-message {
+     @media only screen and (min-width: 768px) {
+       font-size: $fourth-header;
+    }
+  }
+  i {
+    font-size: $base-font-size * 4;
+    margin-top: $margin * 24;
+  }
+  a {
+    color: $main-color;
+    font-size: $fourth-header;
+    margin: $margin  * -24 0 0;
+    &:hover {
+      border-bottom: 1px solid $main-color;
+      text-decoration: none;
+    }
+  }
+  a[href*="tel:"] {
+    letter-spacing: 1px;
+  }
+ }
