@@ -12,6 +12,45 @@ body {
   line-height: 1.6;
 }
 
+// Buttons
+.btn-info {
+  background: transparent;
+  border: 1px solid $main-color;
+  border-radius: 0;
+  letter-spacing: 1px;
+  padding: 7.5px 12.5px;
+  margin: $margin * 4 0 $margin * 28;
+  text-transform: uppercase;
+  &:hover {
+    background: $main-color;
+    border: 1px solid $main-color;
+    color: $background;
+  }
+}
+
+.btn-work {
+  background: $main-color;
+  transition: .7s;
+  &:hover {
+    background: transparent;
+    border: 1px solid $main-color;
+    cursor: pointer;
+    .btn-side {
+      background: transparent;
+      border: none;
+      color: $main-color;
+    }
+  }
+}
+
+.btn-side {
+  @extend .btn-info;
+  border: none;
+  color: $background;
+  font-size: $fourth-header;
+  margin: $margin * 4 0;
+}
+
 // Navigation 
 .navbar {
   margin: 0;
@@ -55,7 +94,10 @@ body {
 
 .cust-statement,
 .description,
-.team {
+.team,
+.advertise,
+.web,
+.graphics {
   padding: $padding * 24 0 $padding * 32;
 }
 
@@ -65,19 +107,6 @@ body {
   color: $main-color;
   padding: $padding * 24 5% 0;
   width: 100%;
-  .btn-info {
-    background: transparent;
-    border: 1px solid $main-color;
-    border-radius: 0;
-    letter-spacing: 1px;
-    padding: 7.5px 12.5px;
-    margin: $margin * 4 0 $margin * 28;
-    text-transform: uppercase;
-    &:hover {
-      background: $main-color;
-      color: $background;
-    }
-  }
 }
 
 .team {
@@ -170,4 +199,39 @@ body {
   // Contact Information 
 .contact-icons {
   padding: 0 0 $padding * 24;
+}
+
+// Work Page
+.jumbo-work {
+  background: linear-gradient($main-overlay),
+  url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5e2cbf8fc0f617f10d40fbf59797b524");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Extra Picture section
+.extra-picture {
+  background: 
+  linear-gradient($main-overlay),
+  url("https://images.unsplash.com/1/bag-and-hands.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c7e4433b55700a7d33d63dd62f810b6f");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 500px;
+}
+
+.advertise,
+.web,
+.graphics{
+  .row {
+    margin-left: 0;
+  }
+   p {
+     padding-top: 0;
+   }
+}
+
+.work-portfolio {
+  padding: $padding * 24 0;
 }

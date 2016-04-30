@@ -90,6 +90,37 @@ body {
   font-size: 16px;
   line-height: 1.6; }
 
+.btn-info, .btn-side {
+  background: transparent;
+  border: 1px solid #e4e4e4;
+  border-radius: 0;
+  letter-spacing: 1px;
+  padding: 7.5px 12.5px;
+  margin: 8px 0 56px;
+  text-transform: uppercase; }
+  .btn-info:hover, .btn-side:hover {
+    background: #e4e4e4;
+    border: 1px solid #e4e4e4;
+    color: rgba(13, 12, 12, 0.87); }
+
+.btn-work {
+  background: #e4e4e4;
+  transition: .7s; }
+  .btn-work:hover {
+    background: transparent;
+    border: 1px solid #e4e4e4;
+    cursor: pointer; }
+    .btn-work:hover .btn-side {
+      background: transparent;
+      border: none;
+      color: #e4e4e4; }
+
+.btn-side {
+  border: none;
+  color: rgba(13, 12, 12, 0.87);
+  font-size: 1.5em;
+  margin: 8px 0; }
+
 .navbar {
   margin: 0;
   padding-bottom: 4px; }
@@ -120,24 +151,16 @@ body {
 
 .cust-statement,
 .description,
-.team {
+.team,
+.advertise,
+.web,
+.graphics {
   padding: 48px 0 64px; }
 
 .main-content {
   color: #e4e4e4;
   padding: 48px 5% 0;
   width: 100%; }
-  .main-content .btn-info {
-    background: transparent;
-    border: 1px solid #e4e4e4;
-    border-radius: 0;
-    letter-spacing: 1px;
-    padding: 7.5px 12.5px;
-    margin: 8px 0 56px;
-    text-transform: uppercase; }
-    .main-content .btn-info:hover {
-      background: #e4e4e4;
-      color: rgba(13, 12, 12, 0.87); }
 
 .team {
   width: 100%; }
@@ -196,5 +219,30 @@ body {
 
 .contact-icons {
   padding: 0 0 48px; }
+
+.jumbo-work {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5e2cbf8fc0f617f10d40fbf59797b524");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.extra-picture {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/1/bag-and-hands.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c7e4433b55700a7d33d63dd62f810b6f");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 500px; }
+
+.advertise .row,
+.web .row,
+.graphics .row {
+  margin-left: 0; }
+.advertise p,
+.web p,
+.graphics p {
+  padding-top: 0; }
+
+.work-portfolio {
+  padding: 48px 0; }
 
 /*# sourceMappingURL=my-styles.css.map */
