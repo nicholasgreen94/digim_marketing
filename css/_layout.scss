@@ -28,29 +28,6 @@ body {
   }
 }
 
-.btn-work {
-  background: $main-color;
-  transition: .7s;
-  &:hover {
-    background: transparent;
-    border: 1px solid $main-color;
-    cursor: pointer;
-    .btn-side {
-      background: transparent;
-      border: none;
-      color: $main-color;
-    }
-  }
-}
-
-.btn-side {
-  @extend .btn-info;
-  border: none;
-  color: $background;
-  font-size: $fourth-header;
-  margin: $margin * 4 0;
-}
-
 // Navigation 
 .navbar {
   margin: 0;
@@ -120,6 +97,10 @@ body {
     border-bottom: 1px solid $main-color;
     padding: 0 5%;
     margin: $margin * 2 0;
+    span {
+      display: inline-block;
+      padding-top: $padding * 32;
+  }
 }
 
 .first-member {
@@ -234,4 +215,31 @@ body {
 
 .work-portfolio {
   padding: $padding * 24 0;
+}
+
+.graphics {
+  .col-xs-12,
+  .col-md-4 {
+    padding-left: 0;
+  }
+.graphic-work {
+  background: rgb(227, 70, 104);
+  border-top: 10px solid rgba(255,255,255,0.5);
+  padding-top: $padding * 12;
+  padding-bottom: $padding * 12;
+  margin-bottom: $margin * 18;
+  &:nth-of-type(2) {
+    background: rgb(116, 176, 185);
+  }
+  &:nth-last-of-type(3) {
+    background: rgb(4, 117, 86);
+  }
+  .glyphicon {
+    font-size: $base-font-size * 5;
+    padding-bottom: $padding * 12;
+  }
+  p {
+      padding: 0 5%;
+    }
+  }
 }
