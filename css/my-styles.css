@@ -98,10 +98,20 @@ body {
   padding: 7.5px 12.5px;
   margin: 8px 0 56px;
   text-transform: uppercase; }
-  .btn-info:hover {
+  .btn-info:hover, .btn-info:active, .btn-info:focus {
     background: #e4e4e4;
     border: 1px solid #e4e4e4;
     color: rgba(13, 12, 12, 0.87); }
+
+.advertise-btn,
+.web-btn,
+.graphic-btn {
+  margin-top: 24px; }
+  @media only screen and (min-width: 992px) {
+    .advertise-btn,
+    .web-btn,
+    .graphic-btn {
+      margin-top: 0; } }
 
 .navbar {
   margin: 0;
@@ -230,23 +240,77 @@ body {
 .work-portfolio {
   padding: 48px 0; }
 
+.advertise .col-xs-12,
+.advertise .col-md-4,
+.web .col-xs-12,
+.web .col-md-4,
 .graphics .col-xs-12,
 .graphics .col-md-4 {
   padding-left: 0; }
+.advertise .advertise-work,
+.advertise .web-work,
+.advertise .graphic-work,
+.web .advertise-work,
+.web .web-work,
+.web .graphic-work,
+.graphics .advertise-work,
+.graphics .web-work,
 .graphics .graphic-work {
-  background: #e34668;
   border-top: 10px solid rgba(255, 255, 255, 0.5);
   padding-top: 24px;
-  padding-bottom: 24px;
-  margin-bottom: 36px; }
-  .graphics .graphic-work:nth-of-type(2) {
-    background: #74b0b9; }
-  .graphics .graphic-work:nth-last-of-type(3) {
-    background: #047556; }
+  padding-bottom: 24px; }
+  @media only screen and (min-width: 992px) {
+    .advertise .advertise-work,
+    .advertise .web-work,
+    .advertise .graphic-work,
+    .web .advertise-work,
+    .web .web-work,
+    .web .graphic-work,
+    .graphics .advertise-work,
+    .graphics .web-work,
+    .graphics .graphic-work {
+      margin-bottom: 36px; } }
+  .advertise .advertise-work .glyphicon,
+  .advertise .web-work .glyphicon,
+  .advertise .graphic-work .glyphicon,
+  .web .advertise-work .glyphicon,
+  .web .web-work .glyphicon,
+  .web .graphic-work .glyphicon,
+  .graphics .advertise-work .glyphicon,
+  .graphics .web-work .glyphicon,
   .graphics .graphic-work .glyphicon {
     font-size: 80px;
     padding-bottom: 24px; }
+  .advertise .advertise-work p,
+  .advertise .web-work p,
+  .advertise .graphic-work p,
+  .web .advertise-work p,
+  .web .web-work p,
+  .web .graphic-work p,
+  .graphics .advertise-work p,
+  .graphics .web-work p,
   .graphics .graphic-work p {
     padding: 0 5%; }
+
+.advertise-work {
+  background: #9c496e; }
+  .advertise-work:nth-of-type(1) {
+    background: #60a1a7; }
+  .advertise-work:nth-last-of-type(2) {
+    background: #9c7178; }
+
+.web-work {
+  background: #33a49b; }
+  .web-work:nth-of-type(1) {
+    background: #c69d32; }
+  .web-work:nth-last-of-type(2) {
+    background: #349be6; }
+
+.graphic-work {
+  background: #e34668; }
+  .graphic-work:nth-of-type(2) {
+    background: #74b0b9; }
+  .graphic-work:nth-last-of-type(3) {
+    background: #047556; }
 
 /*# sourceMappingURL=my-styles.css.map */

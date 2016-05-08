@@ -21,10 +21,20 @@ body {
   padding: 7.5px 12.5px;
   margin: $margin * 4 0 $margin * 28;
   text-transform: uppercase;
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     background: $main-color;
     border: 1px solid $main-color;
     color: $background;
+  }
+}
+.advertise-btn,
+.web-btn,
+.graphic-btn {
+  margin-top: $margin * 12;
+  @media only screen and (min-width: 992px) {
+    margin-top: 0;
   }
 }
 
@@ -217,29 +227,58 @@ body {
   padding: $padding * 24 0;
 }
 
+.advertise,
+.web,
 .graphics {
   .col-xs-12,
   .col-md-4 {
     padding-left: 0;
   }
+  .advertise-work,
+  .web-work,
+  .graphic-work {
+    border-top: 10px solid rgba(255,255,255,0.5);
+    padding-top: $padding * 12;
+    padding-bottom: $padding * 12;
+    @media only screen and (min-width: 992px) {
+      margin-bottom: $margin * 18;
+    }
+    .glyphicon {
+      font-size: $base-font-size * 5;
+      padding-bottom: $padding * 12;
+    }
+    p {
+      padding: 0 5%;
+    }
+  }
+}
+
+.advertise-work {
+  background: rgb(156, 73, 110);
+  &:nth-of-type(1) {
+    background: rgb(96, 161, 167);
+  }
+  &:nth-last-of-type(2) {
+    background: rgb(156, 113, 120);
+  }
+}
+
+.web-work {
+  background: rgb(51, 164, 155);
+  &:nth-of-type(1) {
+    background: rgb(198, 157, 50);
+  }
+  &:nth-last-of-type(2) {
+    background: rgb(52, 155, 230);
+  }
+}
+
 .graphic-work {
   background: rgb(227, 70, 104);
-  border-top: 10px solid rgba(255,255,255,0.5);
-  padding-top: $padding * 12;
-  padding-bottom: $padding * 12;
-  margin-bottom: $margin * 18;
   &:nth-of-type(2) {
     background: rgb(116, 176, 185);
   }
   &:nth-last-of-type(3) {
     background: rgb(4, 117, 86);
-  }
-  .glyphicon {
-    font-size: $base-font-size * 5;
-    padding-bottom: $padding * 12;
-  }
-  p {
-      padding: 0 5%;
-    }
   }
 }

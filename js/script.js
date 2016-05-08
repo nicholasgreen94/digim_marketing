@@ -7,7 +7,7 @@ $(function() {
     
     $(".team-members p").hide();
     $(".team-members").on("mouseover click", function() {
-      $(".team-members p").toggle();
+      $(".team-members p").show();
     })
     
     $(".team-members").on("mouseout", function() {
@@ -16,9 +16,23 @@ $(function() {
     
     var date = new Date();
     $("#year").html(date.getFullYear());
+
+    $(".advertise-work").hide();
+    $(".advertise-btn").on("click", function() {
+      $(".advertise-work").slideToggle("1500");
+      $(this).text("collapse");
+    });
+
+    $(".web-work").hide();
+    $(".web-btn").on("click", function() {
+      $(".web-work").slideToggle("1500");
+      $(this).text("collapse");
+    });
     
     $(".graphic-work").hide();
     $(".graphic-btn").on("click", function() {
+      $(this).text("collapse");
       $(".graphic-work").slideToggle("1500");
     });
+    
 })
