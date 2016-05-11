@@ -48,6 +48,15 @@ h3 {
     h3 {
       font-size: 2.25em; } }
 
+.team-members span, .first-member span, .second-member span {
+  display: inline-block;
+  margin-top: 64px;
+  text-transform: uppercase; }
+
+.contact-email {
+  background: #e4e4e4;
+  color: rgba(13, 12, 12, 0.87); }
+
 .jumbotron .lead {
   display: inline-block;
   font-size: 16px; }
@@ -78,6 +87,25 @@ h3 {
     text-decoration: none; }
 .contact a[href*="tel:"] {
   letter-spacing: 1px; }
+
+[data-toggle="modal"]:hover {
+  cursor: pointer; }
+
+.modal-title,
+label {
+  color: rgba(13, 12, 12, 0.87);
+  text-transform: uppercase; }
+
+.modal-footer button {
+  text-transform: uppercase; }
+.modal-footer .btn-default {
+  border: 1px solid rgba(13, 12, 12, 0.87); }
+.modal-footer .btn-modal {
+  background: rgba(13, 12, 12, 0.87); }
+  .modal-footer .btn-modal:hover {
+    background: #e4e4e4;
+    border: 1px solid rgba(13, 12, 12, 0.87);
+    color: rgba(13, 12, 12, 0.87); }
 
 html,
 body {
@@ -124,10 +152,6 @@ body {
     border: none; }
 
 .jumbotron {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=dbea27138e4493b0472801ba3fa261ed");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 0;
   padding: 96px 10px 124px;
   width: 100%; }
@@ -135,8 +159,20 @@ body {
     .jumbotron {
       padding: 144px 10px 144px; } }
 
+.jumbo-main {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=dbea27138e4493b0472801ba3fa261ed");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .cust-statement {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1421757295538-9c80958e75b0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3628f27cd5768ece147877e2dd792c6c");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.team-jumbo {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/group_work.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -164,9 +200,6 @@ body {
   border-bottom: 1px solid #e4e4e4;
   padding: 0 5%;
   margin: 4px 0; }
-  .team-members span, .first-member span, .second-member span {
-    display: inline-block;
-    padding-top: 64px; }
 
 .first-member {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1457706924510-773f3c796de3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a577e1cee35179131ae189f5ed25ae15");
@@ -312,5 +345,45 @@ body {
     background: #74b0b9; }
   .graphic-work:nth-last-of-type(3) {
     background: #047556; }
+
+.team-videos {
+  margin-bottom: 48px; }
+  @media only screen and (min-width: 768px) {
+    .team-videos {
+      margin-bottom: 76px; } }
+
+.team-section {
+  margin-top: 36px; }
+  @media only screen and (min-width: 768px) {
+    .team-section {
+      margin-top: 48px; } }
+  .team-section .col-xs-12,
+  .team-section .col-md-10 {
+    padding: 0; }
+  .team-section h3 {
+    margin-bottom: 4px; }
+  .team-section span {
+    display: inline-block;
+    margin-bottom: 20px; }
+
+iframe {
+  height: 300px;
+  width: 640px; }
+  @media only screen and (min-width: 768px) {
+    iframe {
+      height: 360px; } }
+  @media only screen and (min-width: 992px) {
+    iframe {
+      height: 420px; } }
+
+.modal-open {
+  padding-right: 0; }
+
+.modal-content {
+  background: #e4e4e4; }
+  .modal-content input,
+  .modal-content textarea {
+    border: 1px solid rgba(13, 12, 12, 0.87);
+    color: rgba(13, 12, 12, 0.87); }
 
 /*# sourceMappingURL=my-styles.css.map */

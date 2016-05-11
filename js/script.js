@@ -8,10 +8,16 @@ $(function() {
     $(".team-members p").hide();
     $(".team-members").on("mouseover click", function() {
       $(".team-members p").show();
+      $(".team-members span").each(function(index) {
+        $(this).addClass("contact-email text-center");
+      });
     })
     
     $(".team-members").on("mouseout", function() {
       $(".team-members p").hide();
+      $(".team-members span").each(function() {
+        $(this).removeClass("contact-email text-center");
+      });
     });
     
     var date = new Date();

@@ -67,6 +67,18 @@ h3 {
   }
 }
 
+.team-members {
+  span {
+  display: inline-block;
+  margin-top: $margin* 32; 
+  text-transform: uppercase;
+  }
+}
+.contact-email {
+  background: $main-color;
+  color: $background;
+}
+
 // jumbotron 
 .jumbotron {
   .lead {
@@ -116,4 +128,34 @@ h3 {
   a[href*="tel:"] {
     letter-spacing: 1px;
   }
+ }
+ 
+ //Modal 
+ [data-toggle="modal"] {
+   &:hover {
+     cursor: pointer;
+   }
+ }
+ 
+ .modal-title,
+ label {
+   color: $background;
+   text-transform: uppercase;
+ }
+ 
+ .modal-footer {
+   button {
+     text-transform: uppercase;
+   }
+   .btn-default {
+    border: 1px solid $background; 
+   }
+   .btn-modal {
+     background: $background;
+     &:hover {
+      background: $main-color;
+      border: 1px solid $background;
+      color: $background;
+     }
+   }
  }

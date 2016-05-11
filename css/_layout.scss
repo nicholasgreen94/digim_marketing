@@ -53,6 +53,15 @@ body {
 }
 
 .jumbotron {
+  margin: 0;
+  padding: $padding * 48 $padding * 5 $padding * 62;
+  width: 100%;
+  @media only screen and (min-width: 768px) {
+    padding: $padding * 72 $padding * 5 $padding * 72;
+  }
+}
+
+.jumbo-main {
   background: 
   linear-gradient($main-overlay), 
   linear-gradient($main-overlay),
@@ -60,12 +69,6 @@ body {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
-  padding: $padding * 48 $padding * 5 $padding * 62;
-  width: 100%;
-  @media only screen and (min-width: 768px) {
-    padding: $padding * 72 $padding * 5 $padding * 72;
-  }
 }
 
 // Customer Statement 
@@ -78,6 +81,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+// Team 
+.team-jumbo {
+  background: 
+    linear-gradient($main-overlay),
+    linear-gradient($main-overlay),
+    url("../images/group_work.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .cust-statement,
 .description,
@@ -107,10 +122,6 @@ body {
     border-bottom: 1px solid $main-color;
     padding: 0 5%;
     margin: $margin * 2 0;
-    span {
-      display: inline-block;
-      padding-top: $padding * 32;
-  }
 }
 
 .first-member {
@@ -282,3 +293,56 @@ body {
     background: rgb(4, 117, 86);
   }
 }
+
+// Team page
+
+.team-videos {
+  margin-bottom: $margin * 24;
+  @media only screen and (min-width: 768px) {
+    margin-bottom: $margin * 38;
+  }
+}
+
+.team-section {
+  margin-top: $margin * 18;
+  @media only screen and (min-width: 768px) {
+    margin-top: $margin * 24;
+  }
+  .col-xs-12,
+  .col-md-10 {
+    padding: 0;
+  }
+  h3 {
+    margin-bottom: $margin * 2;
+  }
+  span {
+    display: inline-block;
+    margin-bottom: $margin * 10;
+  }
+}
+
+iframe {
+  height: 300px;
+  width: 640px;
+  @media only screen and (min-width: 768px) {
+    height: 360px;
+  }
+  @media only screen and (min-width: 992px) {
+    height: 420px;
+  }
+}
+
+//Modal 
+.modal-open {
+  padding-right: 0;
+}
+
+.modal-content {
+  background: $main-color;
+  input,
+  textarea {
+    border: 1px solid $background;
+    color: $background;
+  }
+}
+
