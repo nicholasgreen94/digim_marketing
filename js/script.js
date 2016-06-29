@@ -1,4 +1,8 @@
 $(function() {
+  
+  var $advertise_work = $(".advertise-work");
+  var $web_work = $(".web-work");
+  var $graphic_work = $(".graphic-work");
   // When clicking on main contact add extra content that is hidden
     $(".main-content-link a").on("click", function(event) {
       event.preventDefault();
@@ -23,22 +27,22 @@ $(function() {
     var date = new Date();
     $("#year").html(date.getFullYear());
 
-    $(".advertise-work").hide();
+    $advertise_work.hide();
     $(".advertise-btn").on("click", function() {
-      $(".advertise-work").slideToggle("1500");
+      $advertise_work.slideToggle("1500");
       $(this).text("collapse");
     });
 
-    $(".web-work").hide();
+    $web_work.hide();
     $(".web-btn").on("click", function() {
-      $(".web-work").slideToggle("1500");
+      $web_work.slideToggle("1500");
       $(this).text("collapse");
     });
     
-    $(".graphic-work").hide();
+    $graphic_work.hide();
     $(".graphic-btn").on("click", function() {
+      $graphic_work.slideToggle("1500");
       $(this).text("collapse");
-      $(".graphic-work").slideToggle("1500");
     });
     
 })
