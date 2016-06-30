@@ -133,12 +133,18 @@ body {
 
 .advertise-btn,
 .web-btn,
-.graphic-btn {
+.graphic-btn,
+.advertise-collapse,
+.web-collapse,
+.graphic-collapse {
   margin-top: 24px; }
   @media only screen and (min-width: 992px) {
     .advertise-btn,
     .web-btn,
-    .graphic-btn {
+    .graphic-btn,
+    .advertise-collapse,
+    .web-collapse,
+    .graphic-collapse {
       margin-top: 0; } }
 
 .navbar {

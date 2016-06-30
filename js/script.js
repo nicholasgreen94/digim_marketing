@@ -3,6 +3,10 @@ $(function() {
   var $advertise_work = $(".advertise-work");
   var $web_work = $(".web-work");
   var $graphic_work = $(".graphic-work");
+  var $advertise_collapse = $(".advertise-collapse");
+  var $web_collapse = $(".web-collapse");
+  var $graphic_collapse = $(".graphic-collapse");
+  
   // When clicking on main contact add extra content that is hidden
     $(".main-content-link a").on("click", function(event) {
       event.preventDefault();
@@ -24,25 +28,54 @@ $(function() {
       });
     });
     
-    var date = new Date();
-    $("#year").html(date.getFullYear());
+  var date = new Date();
+  $("#year").html(date.getFullYear());
 
-    $advertise_work.hide();
-    $(".advertise-btn").on("click", function() {
-      $advertise_work.slideToggle("1500");
-      $(this).text("collapse");
-    });
+  $advertise_work.hide();
+  $advertise_collapse.hide();
+  $(".advertise-btn").on("click", function() {
+    $advertise_work.slideToggle("1500");
+    $(this).hide();
+    $advertise_collapse.show();
+  });
+  
+  $advertise_collapse.on("click", function() {
+    $advertise_work.slideToggle("1500");
+    $(this).hide();
+    $(".advertise-btn").show();
+  });
+  
 
-    $web_work.hide();
-    $(".web-btn").on("click", function() {
-      $web_work.slideToggle("1500");
-      $(this).text("collapse");
-    });
-    
-    $graphic_work.hide();
-    $(".graphic-btn").on("click", function() {
-      $graphic_work.slideToggle("1500");
-      $(this).text("collapse");
-    });
-    
+  $web_work.hide();
+  $web_collapse.hide();
+  $(".web-btn").on("click", function() {
+    $web_work.slideToggle("1500");
+    $(this).hide();
+    $web_collapse.show();
+  });
+  
+  
+  $web_collapse.on("click", function() {
+    $web_work.slideToggle("1500");
+    $(this).hide();
+    $(".web-btn").show();
+  });
+
+  
+  $graphic_work.hide();
+  $graphic_collapse.hide();
+  $(".graphic-btn").on("click", function() {
+    $graphic_work.slideToggle("1500");
+    $(this).hide();
+    $graphic_collapse.show();
+  });
+  
+  $graphic_collapse.on("click", function() {
+    $graphic_work.slideToggle("1500");
+    $(this).hide();
+    $(".graphic-btn").show();
+  });
+  
+  
+  
 })

@@ -31,7 +31,10 @@ body {
 }
 .advertise-btn,
 .web-btn,
-.graphic-btn {
+.graphic-btn,
+.advertise-collapse,
+.web-collapse,
+.graphic-collapse {
   margin-top: $margin * 12;
   @media only screen and (min-width: 992px) {
     margin-top: 0;
